@@ -1,0 +1,205 @@
+.container .notes-section {
+  background-color: #dae5f5;
+  height: 100vh;
+  width: 70vw;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container .notes-section .empty-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .notes-section .empty-display img {
+  height: 313px;
+  width: 626px;
+  margin-top: 137px;
+}
+
+.container .notes-section .empty-display p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #292929;
+}
+
+.container .notes-section .notes-display .heading {
+  height: 80px;
+  width: 70vw;
+  background-color: #001f8b;
+  color: white;
+  padding: 50px;
+  margin-left: 2px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.container .notes-section .notes-display .heading p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.container .notes-section .notes-display .heading span {
+  color: white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.container .notes-section .notes-display .notes-list {
+  height: 65vh;
+  overflow-y: scroll;
+}
+
+.container .notes-section .notes-display .notes-list .content {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.container .notes-section .notes-display .notes-list .id {
+  font-size: 18px;
+  font-weight: 500;
+  color: #353535;
+  padding: 20px;
+  text-align: right;
+}
+.container .notes-section .notes-display .notes-list ul li {
+  width: 997px;
+  /* height: 210px; */
+  background-color: white;
+  border: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 35px;
+  list-style: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container .notes-section .notes-display .text-area {
+  height: 20vh;
+  width: 70vw;
+  background-color: #001f8b;
+  padding: 22px;
+}
+
+.container .notes-section .notes-display .text-area input {
+  height: 110px;
+  width: 1014px;
+  border: 1px solid;
+  border-radius: 9px;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 30px;
+  color: #9f9f9f;
+  position: absolute;
+}
+
+.container .notes-section .notes-display .text-area i {
+  height: 29px;
+  width: 35px;
+  /* background-color: white; */
+  border: none;
+  position: relative;
+  top: 70px;
+  left: 970px;
+  transform: rotate(60deg);
+}
+
+@media (max-width: 768px) {
+  .container .notes-section {
+    width: 100vw;
+  }
+
+  .container .notes-section .empty-display {
+    display: none;
+  }
+
+  .container .notes-section .notes-display {
+    width: 100vw;
+  }
+
+  .container .notes-section .notes-display .heading {
+    width: 100vw;
+    margin-left: 0;
+  }
+
+    .container .notes-section .notes-display .heading button{
+      height: 11px;
+      width: 16px;
+      color: white;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  .container .notes-section .notes-display .heading p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+
+  .container .notes-section .notes-display .heading span {
+    font-weight: 500;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .container .notes-section .notes-display .notes-list {
+    height: 65vh;
+    overflow-y: scroll;
+    width: 100vw;
+  }
+
+  .container .notes-section .notes-display .notes-list .id {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .container .notes-section .notes-display .notes-list ul li {
+    width: 90vw;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 30px 20px;
+    overflow-wrap: break-word;
+  }
+
+   .container .notes-section .notes-display .text-area{
+    width: 100vw;
+    height: 25vh;
+   }
+
+  .container .notes-section .notes-display .text-area input {
+    height: 170px;
+    width: 92vw;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 2px 15px;
+  }
+
+  .container .notes-section .notes-display .text-area i {
+    height: 39px;
+    width: 45px;
+    border: none;
+    position: relative;
+    top: 130px;
+    left: 420px;
+    transform: rotate(60deg);
+  }
+}
