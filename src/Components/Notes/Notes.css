@@ -121,7 +121,8 @@
 
 @media (max-width: 768px) {
   .container .notes-section {
-    width: 100vw;
+    width: 360px;
+    height: 800px;
   }
 
   .container .notes-section .empty-display {
@@ -129,11 +130,12 @@
   }
 
   .container .notes-section .notes-display {
-    width: 100vw;
+    width: 360px;
   }
 
   .container .notes-section .notes-display .heading {
-    width: 100vw;
+    width: 360px;
+    height: 66px;
     margin-left: 0;
   }
 
@@ -165,7 +167,7 @@
   .container .notes-section .notes-display .notes-list {
     height: 65vh;
     overflow-y: scroll;
-    width: 100vw;
+    width: 360px;
   }
 
   .container .notes-section .notes-display .notes-list .id {
@@ -173,21 +175,23 @@
     font-weight: 500;
   }
   .container .notes-section .notes-display .notes-list ul li {
-    width: 90vw;
+    width: 328px;
+    height: 270px;
     font-size: 13px;
     font-weight: 400;
-    margin: 30px 20px;
+    margin: 30px 15px;
     overflow-wrap: break-word;
   }
 
    .container .notes-section .notes-display .text-area{
-    width: 100vw;
-    height: 25vh;
+    width: 360px;
+    height: 130px;
+    padding: 14px;
    }
 
   .container .notes-section .notes-display .text-area input {
-    height: 170px;
-    width: 92vw;
+    height: 102px;
+    width: 331px;
     font-size: 17px;
     font-weight: 400;
     padding: 2px 15px;
@@ -198,8 +202,8 @@
     width: 45px;
     border: none;
     position: relative;
-    top: 130px;
-    left: 420px;
+    top: 65px;
+    left: 275px;
     transform: rotate(60deg);
   }
 }

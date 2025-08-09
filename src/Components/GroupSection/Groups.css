@@ -19,7 +19,6 @@
   height: 600px;
   width: 460px;
   overflow-y: auto;
-
 }
 .container .group-section .groups ul li {
   font-size: 24px;
@@ -134,7 +133,7 @@
   border-color: black;
 }
 
-.container .group-section .modal-overlay .modal  button {
+.container .group-section .modal-overlay .modal button {
   font-size: 20px;
   font-weight: 400;
   height: 38px;
@@ -143,93 +142,83 @@
   float: right;
 }
 
-@media(max-width:768px){
-  
-
+@media (max-width: 768px) {
   .container .group-section .groups {
-  
-  width: 100vw;
-  
-}
-.container .group-section .heading {
-  font-weight: 500;
-  font-size: 31px;
-  position: sticky;
-  top: 66px;
-  margin-left: 5px;
-  width: 100vw;
-  text-align: center;
-}
-
-.container .group-section .groups ul {
-  width: 100vw;
-  overflow-y: auto;
-
-}
-.container .group-section .groups ul li {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 10px 140px;
-}
-.container .group-section button {
-  height: 75px;
-  width: 75px;
-  font-size: 40px;
-  font-weight: 500;
-  position: sticky;
-  bottom: 40px;
-  margin-left: 360px;
-}
-.container .group-section .groups .group-circle {
-  width: 62px;
-  height: 62px;
-  font-weight: 500;
-  font-size: 20px;
-  
-}
-
-.container .group-section .modal-overlay .modal {
-  width: 350px;
-  height: 211px;
-}
-
-
-.container .group-section .modal-overlay .modal h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.container .group-section .modal-overlay .modal label {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.container .group-section .modal-overlay .modal input {
-  height: 23px;
-  width: 150px;
-  font-size: 10px;
-  font-weight: 400;
-}
-
-.container .group-section .modal-overlay .modal .color-options label {
-  font-size: 15px;
-  font-weight: 500;
-}
-
-
-
-.color-dot {
-  width: 18px;
-  height: 18px;
  
-}
-
-
-
-.container .group-section .modal-overlay .modal  button {
-  font-size: 17px;
-  height: 32px;
-  width: 186px;
   
-}
+  }
+  .container .group-section .heading {
+    font-weight: 500;
+    font-size: 31px;
+    position: sticky;
+    top: 66px;
+    margin-left: -90px;
+    width: 197px;
+    height: 37px;
+  }
+
+  .container .group-section .groups ul {
+    width: 220px;
+    overflow-y: auto;
+    position: absolute;
+    left: 30px;
+  }
+  .container .group-section .groups ul li {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0px;
+  }
+  .container .group-section button {
+    height: 75px;
+    width: 75px;
+    font-size: 40px;
+    font-weight: 500;
+    position: sticky;
+    bottom: 40px;
+    margin-left: 150px;
+  }
+  .container .group-section .groups .group-circle {
+    width: 62px;
+    height: 62px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .container .group-section .modal-overlay .modal {
+    width: 350px;
+    height: 211px;
+  }
+
+  .container .group-section .modal-overlay .modal h3 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .container .group-section .modal-overlay .modal label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .container .group-section .modal-overlay .modal input {
+    height: 23px;
+    width: 150px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .container .group-section .modal-overlay .modal .color-options label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .color-dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .container .group-section .modal-overlay .modal button {
+    font-size: 17px;
+    height: 32px;
+    width: 186px;
+  }
 }
