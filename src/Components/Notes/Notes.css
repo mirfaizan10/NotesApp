@@ -165,7 +165,7 @@
   }
 
   .container .notes-section .notes-display .notes-list {
-    height: 65vh;
+    height: 500px;
     overflow-y: scroll;
     width: 360px;
   }
