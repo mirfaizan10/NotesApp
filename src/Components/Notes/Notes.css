@@ -123,6 +123,7 @@
   .container .notes-section {
     width: 380px;
     height: 695px;
+    margin-left: -7px;
   }
 
   .container .notes-section .empty-display {
@@ -136,7 +137,6 @@
   .container .notes-section .notes-display .heading {
     width: 360px;
     height: 66px;
-    margin-left: 0;
   }
 
     .container .notes-section .notes-display .heading button{
