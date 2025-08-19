@@ -2,9 +2,7 @@
   background-color: #dae5f5;
   height: 100vh;
   width: 70vw;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+ 
 }
 
 .container .notes-section .empty-display {
@@ -25,6 +23,12 @@
   font-weight: 500;
   margin-top: 10px;
   color: #292929;
+}
+
+.container .notes-section .empty-display #footer{
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 145px;
 }
 
 .container .notes-section .notes-display .heading {
@@ -78,7 +82,6 @@
 }
 .container .notes-section .notes-display .notes-list ul li {
   width: 997px;
-  /* height: 210px; */
   background-color: white;
   border: white;
   border-radius: 5px;
@@ -111,7 +114,6 @@
 .container .notes-section .notes-display .text-area i {
   height: 29px;
   width: 35px;
-  /* background-color: white; */
   border: none;
   position: relative;
   top: 70px;
@@ -177,7 +179,6 @@
   }
   .container .notes-section .notes-display .notes-list ul li {
     width: 328px;
-    height: 270px;
     font-size: 13px;
     font-weight: 400;
     margin: 30px 15px;

@@ -8,6 +8,7 @@ const MainPage = () => {
   );
   
   const [selectedGroup, setSelectedGroup] = useState(null);
+  
 
   useEffect(() => {
     localStorage.setItem("groups", JSON.stringify(groups));
@@ -66,6 +67,7 @@ const MainPage = () => {
           <Groups
             groups={groups}
             onSelectGroup={setSelectedGroup}
+             selectedGroup={selectedGroup}
             onAddGroup={addGroup}
           />
         )}

@@ -10,7 +10,7 @@ const COLORS = [
   "#6691FF",
 ];
 
-const Groups = ({ groups, onSelectGroup, onAddGroup }) => {
+const Groups = ({ groups, onSelectGroup, onAddGroup,selectedGroup }) => {
   const [showModal, setShowModal] = useState(!true);
   const [inputValue, setInputValue] = useState("");
   const [selectedColor, setSelectedColor] = useState(COLORS[0]);
@@ -22,7 +22,7 @@ const Groups = ({ groups, onSelectGroup, onAddGroup }) => {
 useEffect(() => {
   const handleClickOutside = (event) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
-      setShowModal(false); // or your close modal function
+      setShowModal(false); 
     }
   };
 
@@ -32,23 +32,19 @@ useEffect(() => {
   };
 }, []);
 
-// State for error message
 const handleAdd = () => {
   const trimmedName = inputValue.trim();
 
-  // 1. Empty check
   if (!trimmedName) {
     setError("Group name cannot be empty.");
     return;
   }
 
-  // 2. Max two words allowed
   if (trimmedName.split(/\s+/).length > 2) {
     setError("Group name cannot have more than two words.");
     return;
   }
 
-  // 3. Duplicate name check (case-insensitive)
   const isDuplicate = Object.keys(groups).some(
     (name) => name.toLowerCase() === trimmedName.toLowerCase()
   );
@@ -58,10 +54,8 @@ const handleAdd = () => {
     return;
   }
 
-  // ✅ Passed all checks → Add group
   onAddGroup(trimmedName, selectedColor || "#ccc");
 
-  // Reset everything
   setInputValue("");
   setError("");
   setShowModal(false);
@@ -71,15 +65,12 @@ const handleAdd = () => {
   const getInitials = (name) => {
     if (!name) return "";
 
-    // Split and keep the first two non-empty words
     const words = name.trim().split(/\s+/).filter(Boolean);
 
-    // If there are at least two words, get the first char of each
     if (words.length >= 2) {
       return (words[0][0] + words[1][0]).toUpperCase();
     }
 
-    // If only one word, take first two **alphabet characters**
     const lettersOnly = words[0]?.replace(/[^a-zA-Z]/g, "").toUpperCase();
     return lettersOnly?.slice(0, 1) || name.slice(0, 1).toUpperCase();
   };
@@ -95,7 +86,7 @@ const handleAdd = () => {
               <li
                 key={group}
                 onClick={() => onSelectGroup(group)}
-                className="group-item"
+                className={`group-item ${selectedGroup === group ? "active" : ""}`}
               >
                 <span
                   className="group-circle"

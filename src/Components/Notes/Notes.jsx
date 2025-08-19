@@ -34,6 +34,7 @@ const Notes = ({
               <br />
               Use Pocket Notes on up to 4 linked devices and 1 mobile phone
             </p>
+            <p id="footer"><i class="fa-solid fa-lock"></i>   end-to-end encrypted</p>
           </div>
         ) : (
           <div className="notes-display">
